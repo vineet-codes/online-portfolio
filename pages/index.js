@@ -130,16 +130,6 @@ const Index = () => {
         <Bio>
           {bio.bio}
         </Bio>
-        <Publications>
-          <h2>Publications</h2>
-          {publications.map(pub => (
-            <div key={pub.id}>
-              <h3><a href={pub.URL} target="_blank" rel="noreferrer">{pub.title} &#8594;</a></h3>
-              <p>{pub.date}</p>
-              {/* <p>{pub.summary.substring(0,100)}.... Read More -> </p> */}
-            </div>
-          ))}
-        </Publications>
         <WorkHistory>
           <WhTitle>Work History</WhTitle>
           {jobs.map(job => (
@@ -150,6 +140,17 @@ const Index = () => {
             </Job>
           ))}
         </WorkHistory>
+        <Publications>
+          <h2>Publications</h2>
+          {publications.map(pub => (
+            <div key={pub.id}>
+              <h3><a href={pub.URL} target="_blank" rel="noreferrer">{pub.title} &#8594;</a></h3>
+              <p>{pub.date}</p>
+              {/* <p>{pub.summary.substring(0,100)}.... Read More -> </p> */}
+            </div>
+          ))}
+        </Publications>
+        
         <Education>
           <h2>Education History</h2>
           {study.map(s => (
