@@ -1,20 +1,22 @@
 import Head from "next/head"
 
-import Home from "../components/Home"
+import Posts from "../components/Posts"
 import Nav from "../components/Nav"
+
+import {Page} from "./../styles/style-utils"
 
 import { getAllPosts } from "../utils/mdx"
 
 
 const Blog = ({ posts }) => {
   return (
-    <>
-    <Head>
-      <title>Vineet | Home</title>
-    </Head>
-    <Nav/>
-    <Home posts={posts}/>
-    </>
+    <Page>
+      <Head>
+        <title>Vineet | Home</title>
+      </Head>
+      <Nav/>
+      <Posts posts={posts}/>
+    </Page>
   )
 }
 

@@ -27,8 +27,8 @@ const Header = styled.header`
     text-transform: uppercase;
     font-weight: 200;
     font-size: 1.5rem;
-    color: ${(props) => props.theme.brand.c1};
-    border: 1px solid ${(props) => props.theme.brand.c1};
+    color: ${(props) => props.theme.brand.c4};
+    border: 1px solid ${(props) => props.theme.brand.c4};
     padding: 0.05em 0.5em;
   }
 
@@ -223,7 +223,7 @@ const Nav = () => {
     >
       <h1 className='logo'>
         <Link href='/'>
-          <a>Vineet</a>
+          <a>F.O.R</a>
         </Link>
       </h1>
       <input type='checkbox' className='nav-toggle' id='nav-toggle' />
@@ -234,11 +234,11 @@ const Nav = () => {
               <a>Blog</a>
             </Link>
           </li>
-          {/* <li className='nav-list-item'>
-            <Link href='/newsletter'>
-              <a>Newsletter</a>
+          <li className='nav-list-item'>
+            <Link href='/idea-factory'>
+              <a>Idea Factory</a>
             </Link>
-          </li> */}
+          </li>
           {/* <li className='nav-list-item'>
             <Link href='/twitter'>
               <a>Podcast</a>

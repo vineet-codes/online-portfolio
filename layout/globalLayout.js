@@ -3,6 +3,7 @@ import { normalize } from 'styled-normalize';
 
 import { useGlobalStateContext } from './../contexts/globalContext';
 import Nav from './../components/Nav';
+import Footer from "./../components/Footer"
 
 const GlobalStyle = createGlobalStyle`
 ${normalize}
@@ -44,12 +45,16 @@ body {
 }
 
 #__next {
-  width: 80vw;
+  width: 85vw;
   max-width: 750px;
   margin: 0 auto;
-  ${'' /* height: 100vh; */}
+  min-height: 90vh; 
   /* to accomodate fixed nav situtation that we have */
   margin-top: 3.5em;
+
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
 }
 
 h1,
@@ -62,10 +67,19 @@ strong {
 const GlobalLayout = ({ children }) => {
   const { currentTheme } = useGlobalStateContext();
   const darkTheme = {
-    background: '#171717',
-    text: '#f1f1f1',
+    background: '#151513',
+    text: '#f0f0f0',
     brand: {
-      c1: 'rgb(255, 0, 114)',
+      // c1: '#35A7FF',
+      // c2: '#38618C',
+      // c3: '#FFFFFF',
+      // c4: '#FF5964',
+      // c5: '#FFE74C'
+      c1: '#E76F51',
+      c2: '#F4A261',
+      c3: '#E9C46A',
+      c4: '#2A9D8F',
+      c5: '#264653'
     },
   };
 
@@ -73,7 +87,7 @@ const GlobalLayout = ({ children }) => {
     background: '#ffffff',
     text: '#171717',
     brand: {
-      c1: 'rgb(255, 0, 114)',
+      c1: 'rgb(255, 0, 255)',
     },
   };
 
@@ -82,6 +96,7 @@ const GlobalLayout = ({ children }) => {
       <GlobalStyle />
       <Nav />
       {children}
+      <Footer/>
     </ThemeProvider>
   );
 };
