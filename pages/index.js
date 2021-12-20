@@ -6,7 +6,7 @@ import {Page} from "./../styles/style-utils"
 import {bio, jobs, study, publications } from "./../content/cv/cv"
 
 const Container = styled.div`
-  line-height: 1.6;
+  line-height: 1.3;
 `;
 
 const WelcomeMessage = styled.h1`
@@ -43,14 +43,14 @@ const Job = styled.div`
     margin: 0;
     color: #999;
     padding-top: 0.09em;
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
 
   a {
     text-decoration: underline;
     margin: 0;
     paddin-top: 0;
-    color: #999;
+    color: ${props => props.theme.text};
     font-size: 0.9em;
   }
 `;
@@ -71,7 +71,7 @@ const Publications = styled.div`
     p {
       margin: 0;
       padding-top: 0.09em;
-      font-size: 0.9em;
+      font-size: 0.8em;
       color: #999;
     }
 
@@ -99,16 +99,20 @@ const Education = styled.div`
     p {
       margin: 0;
       padding-top: 0.09em;
-      font-size: 0.9em;
+      font-size: 0.8em;
       color: #999;
     }
 
     a {
       color: ${props => props.theme.text};
-      text-decoration: none;
+      text-decoration: underline;
       font-size: 0.9em;
     }
   }
+`;
+
+const Bio = styled.p`
+  line-height: 1.4;
 `;
 
 const Index = () => {
@@ -120,12 +124,12 @@ const Index = () => {
       <Container>
         <CenteredContainer>
           <WelcomeMessage>Welcome to Frame of Reference</WelcomeMessage>
-          <Subtitle>👋 I’m Vineet Singh</Subtitle>
+          <Subtitle>👋 Vineet Singh here.</Subtitle>
           <StyledAvatar alt="image of vineet" src="/assets/vineet.jpg" width={460/2} height={460/2}/>
         </CenteredContainer>
-        <p>
+        <Bio>
           {bio.bio}
-        </p>
+        </Bio>
         <Publications>
           <h2>Publications</h2>
           {publications.map(pub => (
@@ -141,8 +145,8 @@ const Index = () => {
           {jobs.map(job => (
             <Job key={job.id}>
               <h3>{job.title}</h3>
+             <a href={job.URL}>{job.company}</a>
               <p>{job.dates}</p>
-              <span><a href={job.URL}>{job.company}</a></span>
             </Job>
           ))}
         </WorkHistory>
@@ -151,7 +155,7 @@ const Index = () => {
           {study.map(s => (
             <div key={s.id}>
               <h3>{s.title}</h3>
-              <a src={s.URL}>{s.school}</a>
+              <a href={s.URL} target="_blank" rel="noreferrer">{s.school}</a>
               <p>{s.dates}</p>
             </div>
           ))}

@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const FooterC = styled.div`
-  margin-top: 3em;
+  margin-top: auto;
   padding: 2em;
   text-align: center;
   color: #9999;

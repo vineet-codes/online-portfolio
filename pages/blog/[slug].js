@@ -60,7 +60,7 @@ const Main = styled.main`
 
   h1,
   h2 {
-    font-weight: 600;
+    font-weight: 700;
   }
 
   h1 a {
@@ -128,7 +128,6 @@ export async function getStaticPaths(){
 }
 
 export async function getStaticProps({params}) {
-  console.log('params',params);
   const post = await getSinglePost(params.slug);
     return {props: post}
 }

@@ -4,13 +4,13 @@ import styled from 'styled-components';
 
 
 const Heading1 = styled.h1`
-  font-weight: 600;
+  font-weight: 700;
   margin: 0;
   padding: 0;
 `;
 
 const Heading2 = styled.h2`
-  font-weight: 600;
+  font-weight: 700;
   margin: 0;
   padding: 0;
 
