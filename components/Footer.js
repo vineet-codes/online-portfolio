@@ -7,7 +7,7 @@ const FooterC = styled.div`
   color: #9999;
 
   hr {
-    border-top: 1px solid #9999;
+    border-top: 1px solid #6666;
   }
   
   footer {

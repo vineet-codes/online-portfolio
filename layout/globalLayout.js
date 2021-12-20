@@ -52,9 +52,9 @@ body {
   /* to accomodate fixed nav situtation that we have */
   margin-top: 3.5em;
 
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 h1,

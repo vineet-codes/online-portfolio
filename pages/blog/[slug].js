@@ -41,7 +41,7 @@ const Main = styled.main`
 
   #table-of-contents + ul a {
     text-decoration: none;
-    color: ${props => props.theme.brand.c1};
+    color: ${props => props.theme.brand.c4};
     border-bottom: 1px dashed ${props => props.theme.brand.c5};
   }
 
