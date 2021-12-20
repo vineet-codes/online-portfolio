@@ -1,5 +1,5 @@
 export const bio = {
-  bio: "I am a Product Builder, I make software systems and useful products. A crypto nerd, software engineer, data scientist turned product manager with bias for shipping. I build new products with people and technology. Experienced in R&D, experimental design & development with emerging technologies in both business and academic environments. Leadership roles in machine learning, append only crypto ledgers and product management."
+  bio: "I am a Product Builder, I make software systems and useful products. A crypto nerd, software engineer, data scientist turned product manager with bias for shipping. I build new products with people and technology. Experienced in R&D, experimental design & development with emerging technologies in both business and academic environments. Performed leadership roles in machine learning, append only crypto ledgers and product management."
 }
 
 
