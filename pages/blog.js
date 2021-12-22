@@ -14,7 +14,6 @@ const Blog = ({ posts }) => {
       <Head>
         <title>Vineet | Home</title>
       </Head>
-      <Nav/>
       <Posts posts={posts}/>
     </Page>
   )

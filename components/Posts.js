@@ -68,13 +68,13 @@ const Posts = ({ posts }) => {
   const len = posts.length;
   console.log(len);
   return (
-    <div>
+    <>
       <Heading1> All published articles</Heading1>
       <SubHeading>There are a total of {len} posts in this blog.</SubHeading>
       {posts.map((post, index) => (
         <Post post={post} index={len - index} key={index + 1} />
       ))}
-    </div>
+    </>
   );
 };
 
