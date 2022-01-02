@@ -234,11 +234,11 @@ const Nav = () => {
               <a>Blog</a>
             </Link>
           </li>
-          <li className='nav-list-item'>
+          {/* <li className='nav-list-item'>
             <Link href='/idea-factory'>
               <a>Idea Factory</a>
             </Link>
-          </li>
+          </li> */}
           {/* <li className='nav-list-item'>
             <Link href='/twitter'>
               <a>Podcast</a>

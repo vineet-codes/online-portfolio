@@ -8,6 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@dhaiwat10/react-link-preview": "^1.12.2",
     "esbuild": "^0.14.5",
     "gray-matter": "^4.0.3",
     "mdx-bundler": "^8.0.0",
