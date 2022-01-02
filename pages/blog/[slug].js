@@ -22,7 +22,12 @@ const BlogTitle = styled.h1`
 const BlogStats = styled.p`
   padding: 0;
   margin: 0;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
+  color: #999;
+  display: flex;
+  gap: 0.5em;
+  align-tems: center;
+  justify-content: start;
 `;
 
 // styles for parsed MDX styling
@@ -102,9 +107,9 @@ export default function Blog({ code, frontMatter }) {
       <Main>
         <BlogTitle>{frontMatter.title}</BlogTitle>
         <BlogStats>
-          By: Vineet Kumar Singh | {frontMatter.readingTime.text} |{' '}
-          {frontMatter.wordCount} Words| Publication Date:{' '}
-          {frontMatter.publishedAt}
+          <span>By: Vineet Kumar Singh </span>/<span>{frontMatter.readingTime.text} </span>/{' '}
+          <span>{frontMatter.wordCount} Words</span>/<span>Publication Date:{' '}
+          {frontMatter.publishedAt}</span>
         </BlogStats>
         <Content>
           <Component components={components}/>
