@@ -10,6 +10,7 @@ import {components} from "./../../styles/mdx-styles"
 
 import { getAllPosts, getSinglePost } from "../../utils/mdx"
 import { getMDXComponent } from 'mdx-bundler/client';
+import Image from 'next/image';
 
 
 const BlogTitle = styled.h1`
@@ -24,10 +25,10 @@ const BlogStats = styled.p`
   margin: 0;
   font-size: 0.9rem;
   color: #999;
-  display: flex;
-  gap: 0.5em;
-  align-tems: center;
-  justify-content: start;
+  // display: flex;
+  // gap: 0.5em;
+  // align-tems: center;
+  // justify-content: start;
 `;
 
 // styles for parsed MDX styling
@@ -106,9 +107,10 @@ export default function Blog({ code, frontMatter }) {
       </Head>
       <Main>
         <BlogTitle>{frontMatter.title}</BlogTitle>
+        {/* <Image src={frontMatter.cover} alt="cover picture" layout="fill"/> */}
         <BlogStats>
-          <span>By: Vineet Kumar Singh </span>/<span>{frontMatter.readingTime.text} </span>/{' '}
-          <span>{frontMatter.wordCount} Words</span>/<span>Publication Date:{' '}
+          <span>By: Vineet Kumar Singh </span>/ <span>{frontMatter.readingTime.text} </span>/{' '}
+          <span>{frontMatter.wordCount} Words</span>/ <span>Publication Date:{' '}
           {frontMatter.publishedAt}</span>
         </BlogStats>
         <Content>
