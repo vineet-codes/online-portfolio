@@ -15,7 +15,7 @@ const BlockQuote = styled.blockquote`
 `;
 
 const H2 = styled.h2`  
-  background: ${(props) => props.theme.brand.c1};
+  // background: ${(props) => props.theme.brand.c1};
   color: black;
 `;
 
